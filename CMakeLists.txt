@@ -78,3 +78,6 @@ elseif (${CMAKE_GENERATOR} MATCHES "Xcode" )
 
 endif (NOT ${CMAKE_GENERATOR} MATCHES "Xcode" )
 
+# Copy shaders to build folder
+file(GLOB SHADERS "source/*.glsl")
+file(COPY ${SHADERS} DESTINATION ${CMAKE_BINARY_DIR})
