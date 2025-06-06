@@ -1,5 +1,4 @@
-#define STB_IMAGE_IMPLEMENTATION
-#include <common/stb_image.hpp>
+#include "stb_image.h"
 
 unsigned int loadTexture(const char *path)
 {

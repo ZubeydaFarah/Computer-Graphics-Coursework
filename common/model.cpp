@@ -8,7 +8,8 @@
 #include <glm/glm.hpp>
 
 #include "model.hpp"
-#include "stb_image.hpp"
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 
 Model::Model(const char *path)
 {

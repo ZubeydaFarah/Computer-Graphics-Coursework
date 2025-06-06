@@ -18,9 +18,11 @@ include(CreateLaunchers)
 include(MSVCMultipleProcessCompile) # /MP
 
 include_directories(
+	include_directories(${CMAKE_SOURCE_DIR}/external/glad/include)
 	external/glfw-3.1.2/include/
 	external/glew-1.13.0/include/
 	external/glm-0.9.7.1/
+
 	.
 )
 
@@ -46,7 +48,7 @@ add_executable(Computer_Graphics_Coursework
 
 	common/shader.hpp
 	common/texture.hpp
-	common/stb_image.hpp
+	common/stb_image.h
 	common/maths.hpp
 	common/maths.cpp
 	common/camera.hpp
